@@ -1,3 +1,3 @@
-# [AlecWarren.com] (http://alecwarren.com)
-## Get to know A-Dubs
+# [AlecWarren.com](http://alecwarren.com)
+## Come visit and get to know A-Dubs :)
 
