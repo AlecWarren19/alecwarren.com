@@ -4,10 +4,13 @@
     --accent-light:#a043fd;
 } */
 :root {
+    
     --accent-xdark: #3f0400;
     --accent-dark: #7c0800;
     --accent: #c00d00;
     --accent-light: #ff2010;
+    --lg: whitesmoke; /* light grey */
+    background-color:var(--lg);
 }
 
 
