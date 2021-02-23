@@ -31,27 +31,35 @@
 
 <body>
     <div id="main">
-        <div id="toolbar" class="row justify-content-center">
+
+        <div id="bg"></div>
+        <!--<div id="toolbar" class="row justify-content-center">
             <div class="col-5">
                 <div class="row">
                     <div class="tbb col no-gutters"> <a href="http://Portfolio.AlecWarren.com"> Portfolio </a> </div>
                     <div class="tbb col no-gutters"> <a href="http://Resume.AlecWarren.com"> Resume </a> </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div id="landing">
             
             <div class="wrapper" style="z-index: 1; position: relative;">
-                <h1> Welcome to my site </h1>
-                <h2> Feel free to stay a while </h2>
+                <h1> <span><</span> Alec Warren <span>></span> </h1>
+                <h2> Welcome to my site!  <span></span> Feel Free to Stay a While </h2>
 
-                <a href="https://linkedin.com/in/alecwarren19" target="blank" class="link h-center">
-                    <p>LinkedIn</p>
-                </a>
-                <a href="https://github.com/alecwarren19" target="blank" class="link h-center">
-                    <p>GitHub</p>
-                </a>
+                <p class="link h-center">
+                    <a id="innerlink" href="https://linkedin.com/in/alecwarren19" target="blank" >LinkedIn</a>
+                </p>
+                <p class="link h-center">
+                    <a id="innerlink" href="https://github.com/alecwarren19" target="blank">GitHub</a>
+                </p>
+                <p class="link h-center">
+                    <a id="innerlink" href="https://portfolio.alecwarren.com" target="blank">My Portfolio</a>
+                </p>    
+                
+
+
             </div>
             <!-- Just for JS to read value of on document load before populating with hex's -->
             <div id="sample-hex" style="display: none;"></div>
@@ -60,13 +68,13 @@
             <!--<a> alecwarren19@gmail.com </a>-->
         </div>
 
-        <div id="bio" class="row justify-content-center">
+        <div id="bio" class="sect row g-0 justify-content-center">
 
-            <div id="card" class="col-10 col-md-10 col-xxl-8">
+            <div id="desc" class="col-10 col-md-10 col-xxl-8">
                 <div id = "title" class="row justify-content-center">
-                    <div class="col"><div class="bar center"></div></div>
+                    <div class="col g-0"><div class="bar center"></div></div>
                     <div class="col-auto"><h3>About Me</h3></div>
-                    <div class="col"><div class="bar center"></div></div>
+                    <div class="col g-0"><div class="bar center"></div></div>
                 </div>
                 
                 <div class="row justify-content-center">
@@ -88,11 +96,73 @@
                 </div>
             </div>
         </div>
+<!-- 
+        <div id="attributes" class="sect row justify-content-center">
+            <div class="card col-4" id="pl">
+                <h3 class="card-header">
+                    Programming Languages
+                </h3>
+                <ul class ="list-group list-group-flush">
+                    <li class="list-group-item"> 
+                        <h4>Advanced</h4>
+                        <p>Python, HTML, CSS </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Proficient</h4>
+                        <p>JavaScript, jQuery, C#, C/C++, Java, JSON, Assembly</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Familiar</h4>
+                        <p>SQL/MySQL, PHP, Node.js, Django, LaTeX, Matplotlib</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card col-4" id="pl">
+                <h3 class="card-header">
+                    Programming Languages
+                </h3>
+                <ul class ="list-group list-group-flush">
+                    <li class="list-group-item"> 
+                        <h4>Advanced</h4>
+                        <p>Python, HTML, CSS </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Proficient</h4>
+                        <p>JavaScript, jQuery, C#, C/C++, Java, JSON, Assembly</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Familiar</h4>
+                        <p>SQL/MySQL, PHP, Node.js, Django, LaTeX, Matplotlib</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card col-4" id="pl">
+                <h3 class="card-header">
+                    Programming Languages
+                </h3>
+                <ul class ="list-group list-group-flush">
+                    <li class="list-group-item"> 
+                        <h4>Advanced</h4>
+                        <p>Python, HTML, CSS </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Proficient</h4>
+                        <p>JavaScript, jQuery, C#, C/C++, Java, JSON, Assembly</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Familiar</h4>
+                        <p>SQL/MySQL, PHP, Node.js, Django, LaTeX, Matplotlib</p>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
 
 
-        <!-- 
-        <div id="redirects" class="row justify-content-center">
-            <div class="col-10 col-md-5 offset-lg-1 sect">
+<!--         
+        <div id="redirects" class="sect row justify-content-center">
+            <div class="card col-10 col-md-5 offset-lg-1 sect">
                 <h3>Portfolio</h3>
                 <p>Take a tour of my portfolio and see some of my creations from the past few years of my life. </p>
                 <button type="button" class="btn">Show me more!</button>
@@ -104,9 +174,9 @@
                     <button type="button" class="btn">Show me more!</button>
                 </div>
             </div>
-        </div>
+        </div> -->
         
--->
+
 <!--         
         <div id="sadiespot">
             <div class="card-deck">

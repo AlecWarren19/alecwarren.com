@@ -9,11 +9,11 @@ $(function () {
     var originY = -hexHeight * 0.7;
 
     var hexAnimateInDuration = 4000;
-    var hexAnimateOutDuration = 4000;
+    var hexAnimateOutDuration = 3500;
     var hexAnimateInterval = 50; // in milliseconds
-    var hexBaseOpacity = 0.1;
-    var hexMaxOpacity = .8;
-    var hexOpacityVariance = 0.2;
+    var hexBaseOpacity = 0.12;
+    var hexMaxOpacity = .85;
+    var hexOpacityVariance = 0.18;
     var hexAnimateProbability = 0.035;
     var hexMaxFadeDelta = 0.1;
     var hexFadeInEasing = "easeInOutQuad";
@@ -26,14 +26,15 @@ $(function () {
     var hexFontSize = parseFloat($("#sample-hex").css("font-size")) / EM;
     var hexWidthEm = 1.732;
     var hexHeightEm = 2.0;  
+    var hexArea = document.getElementById("bg");
     // console.log(hexFontSize);
     // console.log(maxWindowHeight/(hexHeightEm*(1 + hexMargin)*20.0*hexFontSize))
-    for (var y = 0; 2 * y  < maxWindowHeight/(hexHeightEm*(1 + hexMargin)*20.0*hexFontSize); y++) {
+    for (var y = 0; y < maxWindowHeight/(hexHeightEm*(1 + hexMargin)*20.0*hexFontSize); y++) {
         for (var x = 0; x < maxWindowWidth/(hexWidthEm*(1 + hexMargin)*20.0*hexFontSize); x++) {
             for (var i = 0; i < 2; i++) { 
                 // console.log("adding hexagon...");
                 var thisid = "hex-" + x + "-" + y + "-" + i;
-                var landing = document.getElementById("landing");
+               
                 var hex = document.createElement("div");
                 var l = document.createElement("div");
                 var m = document.createElement("div"); 
@@ -54,7 +55,7 @@ $(function () {
                 var op = parseFloat((hexBaseOpacity + (Math.random() * (Math.random() < 0.5 ? -1 : 1) * hexOpacityVariance)).toFixed(3));
                 // console.log(op);
                 $(hex).css("opacity", op);
-                landing.appendChild(hex);
+                hexArea.appendChild(hex);
                 hexOpacities.push(op)
             } 
         }
@@ -85,7 +86,7 @@ $(function () {
 
     
     function animateHexs() {
-        var hexs = document.getElementById("landing").getElementsByClassName("hex");
+        var hexs = hexArea.getElementsByClassName("hex");
         var i = 0;
         Array.prototype.forEach.call(hexs, function (hex) {
             if (!$(hex).hasClass("active")) {
@@ -109,6 +110,8 @@ $(function () {
             i++;
         });
     }
+
+    // $("#attributes .card #li3").delay(1000).animate({ "height": "0px", "padding": 0})
 
     var animateHexLoop = setInterval(animateHexs, hexAnimateInterval);
    
