@@ -10,7 +10,7 @@
     --accent: #c00d00;
     --accent-light: #ff2010;
     --lg: whitesmoke; /* light grey */
-    background-color:var(--lg);
+    background-color:#111111;
     /* background-color: #111111; */
 }
 
